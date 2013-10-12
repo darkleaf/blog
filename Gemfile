@@ -14,7 +14,7 @@ gem 'jquery-rails'
 gem 'therubyracer', platforms: :ruby
 gem 'less-rails-bootstrap'
 
-gem 'simple_form'
+gem 'simple_form', github: 'plataformatec/simple_form'
 gem 'responders'
 
 

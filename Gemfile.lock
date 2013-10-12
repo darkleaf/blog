@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/plataformatec/simple_form.git
+  revision: 50c4ac4a8bd0cb883ddaa309b779978e4207fef4
+  specs:
+    simple_form (3.0.0)
+      actionpack (>= 4.0.0, < 4.1)
+      activemodel (>= 4.0.0, < 4.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -95,9 +103,6 @@ GEM
       railties (>= 4.0.0.beta, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
-    simple_form (3.0.0)
-      actionpack (>= 4.0.0, < 4.1)
-      activemodel (>= 4.0.0, < 4.1)
     sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -137,7 +142,7 @@ DEPENDENCIES
   rails (= 4.0.0)
   responders
   sass-rails (~> 4.0.0)
-  simple_form
+  simple_form!
   sqlite3
   therubyracer
   turbolinks
