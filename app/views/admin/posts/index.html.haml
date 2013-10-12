@@ -1,0 +1,18 @@
+= link_to 'new', action: :new
+%table
+  %thead
+    %tr
+      %th= Post.human_attribute_name :title
+      %th= Post.human_attribute_name :content
+      %th= Post.human_attribute_name :created_at
+      %th
+  %tbody
+    - @posts.each do |item|
+      %tr
+        %td= item.title
+        %td= item.content
+        %td= l item.created_at, format: :long
+        %td
+          .pull-right
+            = link_to 'edit', { action: :edit, id: item }
+            = link_to 'destroy', { action: :destroy, id: item }, method: :delete, data: { confirm: 'Sure?' }
