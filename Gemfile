@@ -18,6 +18,7 @@ gem 'less-rails-bootstrap'
 gem 'simple_form', github: 'plataformatec/simple_form'
 gem 'responders'
 
+gem 'redcarpet'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

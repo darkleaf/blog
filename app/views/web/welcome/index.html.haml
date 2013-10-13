@@ -1,4 +1,4 @@
 - @posts.each do |post|
   .page-header
     %h1= post.title
-  = post.content
+  = markdown post.content
