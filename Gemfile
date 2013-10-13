@@ -10,16 +10,14 @@ gem 'haml-rails'
 
 gem 'uglifier', '>= 1.3.0'
 
-gem 'jquery-rails'
 gem 'therubyracer', platforms: :ruby
+gem 'jquery-rails'
+gem 'codemirror-rails'
 gem 'less-rails-bootstrap'
 
 gem 'simple_form', github: 'plataformatec/simple_form'
 gem 'responders'
 
-
-
-gem 'turbolinks'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

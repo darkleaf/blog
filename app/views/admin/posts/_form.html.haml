@@ -1,6 +1,6 @@
 = simple_form_for [:admin, @post] do |f|
   = f.input :title
-  = f.input :content
+  = f.input :content, as: :editor
 
   .form-actions
     = f.button :submit, class: 'btn-primary'
