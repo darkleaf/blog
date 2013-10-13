@@ -1,7 +1,5 @@
-module Web
-  class WelcomeController < ApplicationController
-    def index
-      @posts = Post.all
-    end
+class Web::WelcomeController < Web::ApplicationController
+  def index
+    @posts = Post.all
   end
 end

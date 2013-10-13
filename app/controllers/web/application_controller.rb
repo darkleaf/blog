@@ -1,4 +1,2 @@
-module Web
-  class ApplicationController < ::ApplicationController
-  end
+class Web::ApplicationController < ApplicationController
 end

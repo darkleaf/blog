@@ -1,6 +1,4 @@
-module Admin
-  class ApplicationController < ::ApplicationController
-    self.responder = AdminResponder
-    respond_to :html
-  end
+class Admin::ApplicationController < ApplicationController
+  self.responder = AdminResponder
+  respond_to :html
 end
