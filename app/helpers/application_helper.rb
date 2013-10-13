@@ -1,7 +1,11 @@
 module ApplicationHelper
   def markdown(content)
-    renderer = Redcarpet::Render::HTML
-    markdown = Redcarpet::Markdown.new renderer, autolink: true, space_after_headers:  true
-    markdown.render(content).html_safe
+    renderer = Renderer
+    options = {
+        autolink: true,
+        fenced_code_blocks: true
+    }
+    markdown = Redcarpet::Markdown.new renderer, options
+    find_and_preserve markdown.render(content)
   end
 end

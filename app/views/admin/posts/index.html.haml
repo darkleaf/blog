@@ -3,14 +3,12 @@
   %thead
     %tr
       %th= Post.human_attribute_name :title
-      %th= Post.human_attribute_name :content
       %th= Post.human_attribute_name :created_at
       %th
   %tbody
     - @posts.each do |item|
       %tr
         %td= item.title
-        %td= item.content
         %td= l item.created_at, format: :long
         %td
           .pull-right
